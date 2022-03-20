@@ -19,5 +19,4 @@ class UnsplashRepositoryImpl(private val unsplashApi: UnsplashApi) : UnsplashRep
             ),
             pagingSourceFactory = { UnsplashPagingSource(unsplashApi, query) }
         ).liveData
-
 }

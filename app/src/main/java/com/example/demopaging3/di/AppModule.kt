@@ -24,6 +24,6 @@ object AppModule {
         single { retrofit() }
         single { UnsplashApi(get()) }
         single<UnsplashRepository> { UnsplashRepositoryImpl(get()) }
-        viewModel { HomeFragmentViewModel(get()) }
+        viewModel { HomeFragmentViewModel(get(),get()) }
     }
 }
